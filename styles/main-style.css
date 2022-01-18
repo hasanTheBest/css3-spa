@@ -135,7 +135,7 @@ header {
   padding: 1rem;
 }
 
-/* Main Navigation */
+/* ======== Main Navigation ============ */
 .main-navigation {
   min-width: 200px;
 }
@@ -152,6 +152,9 @@ header {
   display: block;
 }
 
+.nav-link:hover {
+  cursor: pointer;
+}
 .nav-link > i {
   margin-right: 1em;
   display: inline-block;
@@ -179,6 +182,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
+  transition: all 1s ease-in-out;
 }
 
 /* ==================== Home ================= */
@@ -186,10 +190,33 @@ section {
   display: flex;
   align-items: center;
   height: 100%;
-  left: -100%;
+  /* left: -100%; */
+}
+
+/* Generally hide input radio element */
+input[type="radio"] {
+  display: none;
+}
+
+/* When clicked home button */
+input[id="to-home"]:checked ~ section.home {
+  left: 0;
+}
+
+input[id="to-home"]:checked ~ section:not(section.home) {
+  left: 100%;
 }
 
 /* ================== About Me ================ */
+.about {
+  left: 100%;
+}
+input[id="to-about"]:checked ~ section.about {
+  left: 0;
+}
+input[id="to-about"]:checked ~ section:not(section.about) {
+  left: -100%;
+}
 .basic-info {
   display: flex;
 }
