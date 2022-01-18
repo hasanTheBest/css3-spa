@@ -36,7 +36,7 @@ h6,
 .display-2 {
   font-family: "Raleway", sans-serif;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
   line-height: 1;
 }
 .display-1 {
@@ -110,6 +110,11 @@ sup,
   letter-spacing: 1.5px;
 }
 
+/* Utilities */
+.text-primary {
+  color: var(--secondary);
+}
+
 /* Body */
 body {
   display: flex;
@@ -154,18 +159,96 @@ header {
   color: white;
 }
 
-/* main */
+/* =============== main ========== */
 main {
   padding: 2rem;
   min-height: 550px;
-}
-
-/* Home Section  */
-section {
+  /* width: calc(100% - 200px); */
+  width: 750px; /* main 750 + nav 200 = 950 total */
+  position: relative;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
+
+/* ========== Section ===============  */
+section {
+  padding: 2rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ==================== Home ================= */
 .home {
   display: flex;
   align-items: center;
   height: 100%;
+  left: -100%;
+}
+
+/* ================== About Me ================ */
+.basic-info {
+  display: flex;
+}
+.about-me {
+  flex-basis: 55%;
+  flex-grow: 1;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.location {
+  flex-basis: 35%;
+  padding-left: 1rem;
+  align-self: center;
+}
+
+/* Basic Services */
+.basic-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+/* Clients */
+.clients {
+  display: flex;
+  overflow-x: auto;
+  margin: 2rem 0;
+  justify-content: center;
+  background-color: var(--dark5);
+}
+.client {
+  background-color: var(--dark5);
+  padding: 0.5rem;
+}
+.client > img {
+  width: 100%;
+  height: 3rem;
+}
+.client:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Fun Facts */
+.fun-facts {
+  display: flex;
+}
+
+.fact {
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: var(--dark5);
+  text-align: center;
+}
+
+.fact:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.fact > h5 {
+  margin-bottom: 0;
 }
