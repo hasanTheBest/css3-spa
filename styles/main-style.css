@@ -300,12 +300,19 @@ input[id="to-about"]:checked ~ section:not(section.about) {
 }
 
 /* Courses */
+.edu-exp-block > .title {
+  margin-bottom: 1.5em;
+}
+.courses {
+  margin-bottom: 3rem;
+}
 .course {
   display: grid;
   grid-template-columns: 1fr auto 3fr;
 }
 /* Course Year and institution */
 .course-year {
+  padding-top: 1.5rem;
   padding-right: 1.5rem;
   text-align: right;
   min-width: 120px;
@@ -320,6 +327,7 @@ input[id="to-about"]:checked ~ section:not(section.about) {
 }
 /* course details */
 .course-detail {
+  padding-top: 1.5rem;
   padding-left: 1.5rem;
 }
 
@@ -343,8 +351,11 @@ input[id="to-about"]:checked ~ section:not(section.about) {
 }
 
 /* ====== skills block ====== */
+.skill-group {
+  margin-bottom: 2rem;
+}
 .skill:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 .skill-name {
   display: flex;
@@ -375,4 +386,21 @@ input[id="to-about"]:checked ~ section:not(section.about) {
 }
 .skill:nth-child(4) .skill-indicator::after {
   width: 90%;
+}
+
+/* Tools and technologies */
+.tools-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+}
+
+.tools-technologies > h6 {
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--secondary);
+}
+.tools-technologies > h6:not(:last-child) {
+  margin-right: 0.5rem;
 }
