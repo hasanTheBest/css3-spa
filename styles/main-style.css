@@ -407,6 +407,9 @@ input[id="to-about"]:checked ~ section:not(section.about) {
 }
 
 /* ==================== Portfolios ========== */
+.portfolio-section {
+  left: 100%;
+}
 
 /* Portfolio navigation */
 .portfolio-nav {
@@ -446,4 +449,9 @@ input[id="to-about"]:checked ~ section:not(section.about) {
 /* Portfolio Item title */
 .portfolio > h5 {
   margin-top: 0.5rem;
+}
+
+/* =============== Contact ============== */
+.form-input-wrapper {
+  display: flex;
 }
