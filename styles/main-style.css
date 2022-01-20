@@ -288,6 +288,7 @@ input[id="to-about"]:checked ~ section:not(section.about) {
 
 /* Education and Experience */
 .education-experience {
+  left: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 2fr 1fr;
@@ -403,4 +404,46 @@ input[id="to-about"]:checked ~ section:not(section.about) {
 }
 .tools-technologies > h6:not(:last-child) {
   margin-right: 0.5rem;
+}
+
+/* ==================== Portfolios ========== */
+
+/* Portfolio navigation */
+.portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* Portfolio Nav Item */
+.portfolio-nav > label {
+  padding: 0.5rem 0.8rem;
+  display: inline-block;
+}
+.portfolio-nav > label:focus,
+.portfolio-nav > label:focus {
+  cursor: pointer;
+}
+.portfolio-nav > label:not(:last-child) {
+  margin-right: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Portfolios */
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  gap: 1.5rem;
+}
+
+/* Portfolio Item image */
+.portfolio > img {
+  max-width: 100%;
+  min-height: 200px;
+}
+
+/* Portfolio Item title */
+.portfolio > h5 {
+  margin-top: 0.5rem;
 }
