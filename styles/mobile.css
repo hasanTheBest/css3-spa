@@ -1,0 +1,42 @@
+html {
+  font-size: 12px;
+}
+
+/* Navigation */
+header {
+  display: none;
+}
+
+/* main section */
+main {
+  min-width: 300px;
+  width: 100%;
+  overflow: auto;
+  height: auto;
+}
+
+.wrapper {
+  flex-direction: column;
+}
+
+/* All sections */
+.wrapper > main > section {
+  position: static;
+  /* top: auto; */
+  /* left: auto; */
+  width: auto;
+  height: auto;
+  overflow: auto;
+  flex-direction: column;
+}
+
+/* Home-section */
+.home {
+  position: static;
+  display: block;
+  left: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* About Section */
