@@ -1,0 +1,16 @@
+/* =====================================
+  Custom Variables
+========================================== */
+:root {
+  --primary: #2655ac; /* blue */
+  --secondary: #f77824; /* orange */
+  --green: #009983; /* green */
+  --red: #f45442; /* red */
+  --purple: #af3078; /* purple */
+  --dark: #121212;
+  --dark1: #1d1d1d;
+  --dark2: #212121;
+  --dark3: #242424;
+  --dark4: #272727;
+  --dark5: #2c2c2c;
+}
