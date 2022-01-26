@@ -18,5 +18,5 @@
   --wrapper-lg: 1140px; /* where screen size 1200px and above */
   --wrapper-md: 960px; /* where screen size 992px and above */
   --wrapper-sm: 720px; /* where screen size 768px and above */
-  --wrapper-sm: 100%; /* where screen size less then 768px */
+  --wrapper-xsm: 100%; /* where screen size less then 768px */
 }

@@ -14,6 +14,7 @@ body {
   display: flex;
   max-width: var(--wrapper-xlg); /* 1320px for Extra large device >1400 */
   aspect-ratio: 16 / 9;
+  overflow-y: auto;
 }
 
 header {
@@ -51,7 +52,6 @@ header {
 /* =============== main ========== */
 main {
   padding: 2rem;
-  min-height: 550px;
   width: calc(var(--wrapper-xlg) - 200px); /* 1320 - 200(nav) = 1120 */
   position: relative;
   overflow-x: hidden;
