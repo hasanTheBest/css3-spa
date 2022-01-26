@@ -12,8 +12,8 @@ body {
 .wrapper {
   background-color: var(--dark);
   display: flex;
-  max-width: 950px;
-  /* align-items: flex-start; */
+  max-width: var(--wrapper-xlg); /* 1320px for Extra large device >1400 */
+  aspect-ratio: 16 / 9;
 }
 
 header {
@@ -52,7 +52,7 @@ header {
 main {
   padding: 2rem;
   min-height: 550px;
-  width: 750px; /* main 750 + nav 200 = 950 total */
+  width: calc(var(--wrapper-xlg) - 200px); /* 1320 - 200(nav) = 1120 */
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;

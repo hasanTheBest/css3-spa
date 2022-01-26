@@ -13,4 +13,10 @@
   --dark3: #242424;
   --dark4: #272727;
   --dark5: #2c2c2c;
+
+  --wrapper-xlg: 1320px; /* where screen size 1400px and above */
+  --wrapper-lg: 1140px; /* where screen size 1200px and above */
+  --wrapper-md: 960px; /* where screen size 992px and above */
+  --wrapper-sm: 720px; /* where screen size 768px and above */
+  --wrapper-sm: 100%; /* where screen size less then 768px */
 }
