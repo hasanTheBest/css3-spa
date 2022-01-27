@@ -10,8 +10,8 @@
   padding: 0.5rem 0.8rem;
   display: inline-block;
 }
-.portfolio-nav > label:focus,
-.portfolio-nav > label:focus {
+/* .portfolio-nav > label:focus, */
+.portfolio-nav > label:hover {
   cursor: pointer;
 }
 .portfolio-nav > label:not(:last-child) {
@@ -27,6 +27,12 @@
   gap: 1.5rem;
 }
 
+/* Portfolio Item */
+.portfolio {
+  transition: all 1s ease;
+  position: relative;
+}
+
 /* Portfolio Item image */
 .portfolio > img {
   max-width: 100%;
@@ -36,4 +42,13 @@
 /* Portfolio Item title */
 .portfolio > h5 {
   margin-top: 0.5rem;
+}
+
+.portfolios > input[id="html-css"]:checked ~ div:not([class*="html-css"]),
+.portfolios > input[id="react-js"]:checked ~ div:not([class*="react-js"]),
+.portfolios > input[id="vanila-js"]:checked ~ div:not([class*="vanila-js"]),
+.portfolios > input[id="wordpress"]:checked ~ div:not([class*="wordpress"]),
+.portfolios > input[id="fullstack"]:checked ~ div:not([class*="fullstack"]) {
+  transform: scale(0);
+  position: absolute;
 }
