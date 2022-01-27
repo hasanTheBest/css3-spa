@@ -13,5 +13,5 @@
 }
 .nav-link > i[class^="fa"] {
   display: block;
-  margin-bottom: 0.2rem;
+  margin: 0.1rem auto;
 }
