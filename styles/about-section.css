@@ -16,14 +16,23 @@
 /* Basic Services */
 .basic-services {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
   gap: 1rem;
+}
+
+.basic-service > .icon {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.basic-service-title {
+  margin-bottom: 0.5rem;
 }
 
 /* Clients */
 .clients {
   display: flex;
+  flex-wrap: wrap;
   overflow-x: auto;
   margin: 2rem 0;
   justify-content: center;

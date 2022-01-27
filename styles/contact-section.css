@@ -12,6 +12,9 @@
 /* Contact map */
 .contact-map {
   min-height: 120px;
+  aspect-ratio: 21 / 9;
+  max-height: 350px;
+  margin-bottom: 2rem;
 }
 
 .contact-map > img {

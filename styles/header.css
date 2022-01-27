@@ -68,7 +68,7 @@ main {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 1s ease-in-out;
+  transition: opacity 0.8s ease, left 1s ease-out 0.5s;
 }
 
 /* ====== Navigation Controls ========== */
@@ -94,4 +94,5 @@ input[id="to-education"]:checked ~ section:not(section.education-experience),
 input[id="to-portfolio"]:checked ~ section:not(section.portfolio-section),
 input[id="to-contact"]:checked ~ section:not(section.contact-section) {
   left: 100%;
+  opacity: 0;
 }
