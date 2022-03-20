@@ -14,6 +14,10 @@
   --dark4: #272727;
   --dark5: #2c2c2c;
 
+  --text-primary: #fff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-disabled: rgba(255, 255, 255, 0.5);
+
   --wrapper-xlg: 1320px; /* where screen size 1400px and above */
   --wrapper-lg: 1140px; /* where screen size 1200px and above */
   --wrapper-md: 960px; /* where screen size 992px and above */

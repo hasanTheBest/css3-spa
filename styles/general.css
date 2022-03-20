@@ -6,6 +6,7 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1.5;
   letter-spacing: 0.25px;
+  color: var(--text-primary);
 }
 h1,
 h2,
@@ -58,6 +59,7 @@ h6,
 .subtitle-1 {
   font-size: 1rem;
   letter-spacing: 0.15px;
+  color: var(--text-secondary);
 }
 
 .subtitle-2 {
@@ -89,4 +91,27 @@ sup,
 .overline {
   font-size: 0.625rem;
   letter-spacing: 1.5px;
+}
+
+/* ======= scroll bar ===== */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--dark2);
+  /* border-radius: 0.25rem; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dark5);
+  /* border-radius: 0.25rem; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
 }
