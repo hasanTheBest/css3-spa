@@ -31,8 +31,8 @@
 /* Portfolios */
 .portfolios {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1.5rem;
   gap: 1.5rem;
 }
 
@@ -48,9 +48,34 @@
   min-height: 200px;
 }
 
+/* portfolio item live and code */
+.portfolio > p{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Portfolio Item code and live link */
+.portfolio > p  a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+
 /* Portfolio Item title */
 .portfolio > h5 {
   margin-top: 0.5rem;
+}
+
+/* Portfolio link */
+.portfolio > h5 > a{
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.portfolio > h5 > a:focus,.portfolio > h5 > a:hover{
+  color: var(--text-primary);
 }
 
 .portfolios > input[id="html-css"]:checked ~ div:not([class*="html-css"]),
